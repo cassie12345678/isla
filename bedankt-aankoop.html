@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aanvraag Ontvangen | Isla Vayne</title>
+    <meta name="description" content="Bedankt voor je aankoopaanvraag aan Isla Vayne.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Simonetta:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/script.js"></script>
+</head>
+<body>
+    <div id="age-modal" class="age-modal" aria-hidden="true">
+        <div class="age-modal-content">
+            <p class="eyebrow">18+</p>
+            <h2>Leeftijdsverificatie</h2>
+            <p>Deze website is uitsluitend bedoeld voor volwassenen. Bevestig dat je 18 jaar of ouder bent om verder te gaan.</p>
+            <button id="age-confirm-btn" class="btn btn-primary" type="button" onclick="confirmAge()">Ik ben 18+</button>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="container header-bar">
+            <a href="index.html" class="logo">Isla Vayne</a>
+            <nav class="nav" aria-label="Hoofdnavigatie">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+                <ul class="nav-menu" id="site-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="over.html">Bio</a></li>
+                    <li><a href="diensten.html">Diensten</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="merchandise.html" class="active">Shop</a></li>
+                    <li><a href="galerij.html">Galerij</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Schakel naar lichte modus">
+                <span>Licht</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <section class="page-hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Ontvangen</p>
+                    <h1>Je aankoopaanvraag is ontvangen.</h1>
+                    <p>Je hebt je interesse duidelijk gemaakt. Vanaf hier kan de volgende stap rustig en gericht worden opgepakt.</p>
+                    <div class="hero-actions">
+                        <a href="merchandise.html" class="btn btn-primary">Terug naar shop</a>
+                        <a href="wishlist.html" class="btn btn-ghost">Bekijk wishlist</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="portrait-card portrait-card-home">
+                        <img src="images/isla-gallery-16.jpeg" alt="Portret van Isla Vayne">
+                        <div class="hero-portrait-note">
+                            <p class="eyebrow">Volgende stap</p>
+                            <p>De aanvraag staat uit. Jij hebt gedaan wat nodig was.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-tight">
+            <div class="container">
+                <div class="section-card">
+                    <p class="eyebrow">Wat nu</p>
+                    <h2>Rustig, helder en zonder ruis.</h2>
+                    <div class="contact-steps">
+                        <article class="step-card">
+                            <h3>Ontvangen</h3>
+                            <p>Je formulier is verzonden via de live aankoopflow.</p>
+                        </article>
+                        <article class="step-card">
+                            <h3>Bekeken</h3>
+                            <p>De aanvraag kan nu worden beoordeeld op voorkeur, sfeer en praktische details.</p>
+                        </article>
+                        <article class="step-card">
+                            <h3>Vervolg</h3>
+                            <p>Daarna kan er gericht gereageerd worden op wat jij wilt kopen.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <p class="eyebrow">Isla Vayne</p>
+                <p class="footer-text">Een luxe, volwassen setting voor bio, diensten, shop, galerij, tribute en contact.</p>
+            </div>
+            <div class="footer-links">
+                <a href="over.html">Bio</a>
+                <a href="diensten.html">Diensten</a>
+                <a href="merchandise.html">Shop</a>
+                <a href="galerij.html">Galerij</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-note">
+                <p>18+ only</p>
+                <p>Alle aanvragen uitsluitend voor volwassenen.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

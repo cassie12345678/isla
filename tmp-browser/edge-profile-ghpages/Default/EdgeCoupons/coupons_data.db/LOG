@@ -1,0 +1,10 @@
+2026/05/01-15:44:48.366 2900 Reusing MANIFEST c:\Users\casbe\OneDrive\Documents\GitHub\isla\tmp-browser\edge-profile-ghpages\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/05/01-15:44:48.367 2900 Recovering log #3
+2026/05/01-15:44:48.369 2900 Level-0 table #3: started
+2026/05/01-15:44:48.376 2900 Level-0 table #3: 682129 bytes OK
+2026/05/01-15:44:48.377 2900 Recovering log #4
+2026/05/01-15:44:48.378 2900 Reusing old log c:\Users\casbe\OneDrive\Documents\GitHub\isla\tmp-browser\edge-profile-ghpages\Default\EdgeCoupons/coupons_data.db/000004.log 
+2026/05/01-15:44:48.382 2900 Delete type=0 #3
+2026/05/01-15:44:48.383 2900 Delete type=2 #5
+2026/05/01-15:44:48.388 76b0 Level-0 table #6: started
+2026/05/01-15:44:48.394 76b0 Level-0 table #6: 682232 bytes OK

@@ -1,0 +1,94 @@
+{
+   "checksum": "209f04df6563621c1da9d8b6dbd3af6f",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13422116661303137",
+            "date_last_used": "0",
+            "guid": "05bc93f2-e748-4483-9121-fd48877793ec",
+            "id": "10",
+            "name": "Adobe Acrobat Pro DC for Samsung",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "http://www.adobe.com/go/samsung_apdc",
+            "visit_count": 0
+         }, {
+            "date_added": "13422116661302403",
+            "date_last_used": "0",
+            "guid": "436ad4bb-8df3-4f10-ad26-c5651aa5d033",
+            "id": "9",
+            "name": "Adobe Creative Cloud All Apps for Samsung",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "http://www.adobe.com/go/samsung_cci",
+            "visit_count": 0
+         }, {
+            "date_added": "13422116661301669",
+            "date_last_used": "0",
+            "guid": "410f3c36-3c31-4bda-a8d9-593ddea5b431",
+            "id": "8",
+            "name": "Adobe Premiere Pro CC for Samsung",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "http://www.adobe.com/go/samsung_ppcc",
+            "visit_count": 0
+         }, {
+            "date_added": "13422116661298046",
+            "date_last_used": "0",
+            "guid": "fcf3533b-fd56-4e04-9e52-01e6ae7407f5",
+            "id": "7",
+            "name": "McAfee Online Protection – Benefits for Samsung PCs",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://consroute.mcafee.com/app?csrc=browserfav&affid=1348&clicksrc=browserfav",
+            "visit_count": 0
+         } ],
+         "date_added": "13422116660908960",
+         "date_last_used": "0",
+         "date_modified": "13422116661303137",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Werkbalk Favorieten",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13422116660908960",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Andere favorieten",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13422116660908960",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobiele favorieten",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "workspaces_v2": {
+         "children": [  ],
+         "date_added": "13422116660908960",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "75aa6670-344f-549d-b742-660f029506ab",
+         "id": "5",
+         "name": "Werkruimten",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
