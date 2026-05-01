@@ -1,153 +1,152 @@
-/*
- * JavaScript for the Isla Vayne website
- *
- * This script powers the interactive elements of the site such as
- * responsive navigation, theme switching, gallery modals, blog search
- * and the contact form feedback. It is intentionally plain and
- * lightweight so the pages remain fast and easy to maintain.
- */
+document.addEventListener("DOMContentLoaded", () => {
+    const body = document.body;
+    const navToggle = document.querySelector(".nav-toggle");
+    const navMenu = document.querySelector(".nav-menu");
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Responsive navigation toggle for small screens
-  const navToggle = document.querySelector('.nav-toggle');
-  const navMenu = document.querySelector('.nav-menu');
-  if (navToggle && navMenu) {
-    navToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
-    });
-  }
+    if (navToggle && navMenu) {
+        navToggle.addEventListener("click", () => {
+            const isOpen = navMenu.classList.toggle("open");
+            navToggle.setAttribute("aria-expanded", String(isOpen));
+        });
 
-  // Theme switcher (light/dark). Persist selection via localStorage
-  const themeToggle = document.getElementById('theme-toggle');
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') {
-    document.body.classList.add('dark');
-  }
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-      if (document.body.classList.contains('dark')) {
-        localStorage.setItem('theme', 'dark');
-      } else {
-        localStorage.setItem('theme', 'light');
-      }
-    });
-  }
-
-  // Create a reusable modal for gallery images
-  const createModal = () => {
-    const modal = document.createElement('div');
-    modal.className = 'modal';
-    modal.style.display = 'none';
-    modal.innerHTML = `
-      <div class="modal-content">
-        <button class="modal-close" aria-label="Sluiten">&times;</button>
-        <img src="" alt="">
-        <div class="caption"></div>
-      </div>
-    `;
-    document.body.appendChild(modal);
-    return modal;
-  };
-  const modal = createModal();
-  const modalImg = modal.querySelector('img');
-  const modalCaption = modal.querySelector('.caption');
-  const modalClose = modal.querySelector('.modal-close');
-
-  // Open modal when a gallery figure is clicked
-  const galleryFigures = document.querySelectorAll('.gallery-grid figure');
-  if (galleryFigures.length && modalImg && modalCaption) {
-    galleryFigures.forEach((figure) => {
-      figure.addEventListener('click', () => {
-        const img = figure.querySelector('img');
-        if (!img) return;
-        modalImg.src = img.src;
-        modalImg.alt = img.alt;
-        const captionEl = figure.querySelector('figcaption');
-        modalCaption.textContent = captionEl ? captionEl.textContent : '';
-        modal.style.display = 'flex';
-      });
-    });
-  }
-
-  // Close modal when close button or overlay is clicked
-  if (modalClose) {
-    modalClose.addEventListener('click', () => {
-      modal.style.display = 'none';
-    });
-  }
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.style.display = 'none';
+        navMenu.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+                navMenu.classList.remove("open");
+                navToggle.setAttribute("aria-expanded", "false");
+            });
+        });
     }
-  });
 
-  // Blog search filter: hides posts whose titles don't match the search term
-  const searchInput = document.getElementById('blog-search');
-  if (searchInput) {
-    const posts = document.querySelectorAll('.blog-post');
-    searchInput.addEventListener('input', () => {
-      const term = searchInput.value.toLowerCase();
-      posts.forEach((post) => {
-        const h3 = post.querySelector('h3');
-        const title = h3 ? h3.textContent.toLowerCase() : '';
-        if (title.includes(term)) {
-          post.style.display = '';
-        } else {
-          post.style.display = 'none';
+    const themeToggle = document.getElementById("theme-toggle");
+    const updateThemeToggle = () => {
+        if (!themeToggle) {
+            return;
         }
-      });
-    });
-  }
 
-  // Contact form submission feedback
-  const contactForm = document.getElementById('contact-form');
-  const formMessage = document.getElementById('form-message');
-  if (contactForm && formMessage) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      // Provide a friendly confirmation message in Dutch
-      formMessage.textContent = 'Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.';
-      formMessage.style.display = 'block';
-      // Reset the form fields
-      contactForm.reset();
-    });
-  }
+        const label = body.classList.contains("theme-light") ? "Donker" : "Licht";
+        const span = themeToggle.querySelector("span");
 
-  // Age verification modal: show if not previously confirmed
-  const ageModal = document.getElementById('age-modal');
-  const ageConfirmBtn = document.getElementById('age-confirm-btn');
-  // Only run this if the modal exists on the page
-  if (ageModal && !localStorage.getItem('ageConfirmed')) {
-    // Show the modal overlay
-    ageModal.style.display = 'flex';
-    if (ageConfirmBtn) {
-      ageConfirmBtn.addEventListener('click', () => {
-        // Hide the modal and persist confirmation when clicking via JS
-        confirmAge();
-      });
+        if (span) {
+            span.textContent = label;
+        } else {
+            themeToggle.textContent = label;
+        }
+
+        themeToggle.setAttribute(
+            "aria-label",
+            body.classList.contains("theme-light")
+                ? "Schakel naar donkere modus"
+                : "Schakel naar lichte modus"
+        );
+    };
+
+    try {
+        if (localStorage.getItem("site-theme") === "light") {
+            body.classList.add("theme-light");
+        }
+    } catch (error) {
+        // Ignore storage issues and keep the default theme.
     }
-  }
-});
 
-/**
- * Hide the age verification modal and persist the confirmation.
- * This function is exposed on the global window object so it can be
- * invoked from inline HTML (e.g. onclick handlers). If the modal
- * element is present it will be hidden, and the flag stored in
- * localStorage ensures the prompt is not shown again on subsequent
- * page loads for the same origin.
- */
-function confirmAge() {
-  const modal = document.getElementById('age-modal');
-  if (modal) {
-    modal.style.display = 'none';
-  }
-  try {
-    localStorage.setItem('ageConfirmed', 'true');
-  } catch (e) {
-    // Ignore storage errors (e.g. localStorage not available)
-  }
-}
-// Expose confirmAge globally so inline onclick attributes work
-window.confirmAge = confirmAge;
+    updateThemeToggle();
+
+    if (themeToggle) {
+        themeToggle.addEventListener("click", () => {
+            body.classList.toggle("theme-light");
+
+            try {
+                localStorage.setItem(
+                    "site-theme",
+                    body.classList.contains("theme-light") ? "light" : "dark"
+                );
+            } catch (error) {
+                // Ignore storage issues and continue.
+            }
+
+            updateThemeToggle();
+        });
+    }
+
+    const ageModal = document.getElementById("age-modal");
+
+    const showAgeModal = () => {
+        if (!ageModal) {
+            return;
+        }
+
+        ageModal.classList.add("is-visible");
+        ageModal.setAttribute("aria-hidden", "false");
+        body.classList.add("modal-open");
+    };
+
+    const hideAgeModal = () => {
+        if (!ageModal) {
+            return;
+        }
+
+        ageModal.classList.remove("is-visible");
+        ageModal.setAttribute("aria-hidden", "true");
+        body.classList.remove("modal-open");
+    };
+
+    try {
+        if (!localStorage.getItem("ageConfirmed")) {
+            showAgeModal();
+        }
+    } catch (error) {
+        showAgeModal();
+    }
+
+    window.confirmAge = () => {
+        hideAgeModal();
+
+        try {
+            localStorage.setItem("ageConfirmed", "true");
+        } catch (error) {
+            // Ignore storage issues and keep the modal closed for this session.
+        }
+    };
+
+    const serviceButtons = Array.from(document.querySelectorAll("[data-services-tab]"));
+    const servicePanels = Array.from(document.querySelectorAll("[data-services-panel]"));
+
+    if (serviceButtons.length && servicePanels.length) {
+        const activatePanel = (panelName) => {
+            serviceButtons.forEach((button) => {
+                const isActive = button.dataset.servicesTab === panelName;
+                button.classList.toggle("is-active", isActive);
+                button.setAttribute("aria-selected", String(isActive));
+            });
+
+            servicePanels.forEach((panel) => {
+                const isActive = panel.dataset.servicesPanel === panelName;
+                panel.classList.toggle("is-active", isActive);
+                panel.hidden = !isActive;
+            });
+        };
+
+        const defaultPanel =
+            serviceButtons.find((button) => button.classList.contains("is-active"))?.dataset.servicesTab ||
+            serviceButtons[0].dataset.servicesTab;
+
+        activatePanel(defaultPanel);
+
+        serviceButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                activatePanel(button.dataset.servicesTab);
+            });
+        });
+    }
+
+    const contactForm = document.getElementById("contact-form");
+    const formMessage = document.getElementById("form-message");
+
+    if (contactForm && formMessage) {
+        contactForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+            formMessage.textContent = "Bedankt. Je aanvraag is ontvangen en kan nu verder worden opgevolgd.";
+            formMessage.style.display = "block";
+            contactForm.reset();
+        });
+    }
+});
