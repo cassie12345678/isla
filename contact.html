@@ -2,150 +2,140 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Isla Vayne</title>
+    <meta name="description" content="Neem contact op met Isla Vayne voor boekingen, online aanvragen, custom content en wishlist-vragen.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Simonetta:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <meta name="description" content="Neem contact op met Isla Vayne, de Nederlandse meesteres en coach. Vul het formulier in voor vragen over sessies, coaching of reizen.">
+    <script defer src="assets/js/script.js"></script>
 </head>
 <body>
-    <!-- Header and navigation -->
-    <header class="site-header">
-        <div class="container">
-            <a href="index.html" class="logo">Isla Vayne</a>
-            <nav class="nav">
-                <!-- Hamburger for mobile navigation -->
-                <button class="nav-toggle" aria-label="Menu openen">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="over.html">Bio</a></li>
-                    <li><a href="diensten.html">Diensten</a></li>
-                    <li><a href="bundels.html">Bundels</a></li>
-                    <li><a href="merchandise.html">Merchandise</a></li>
-                    <li><a href="memberships.html">Memberships</a></li>
-                    <li><a href="boeking.html">Boeking</a></li>
-                    <li><a href="galerij.html">Galerij</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                    <li><a href="links.html">Links</a></li>
-                </ul>
-            </nav>
-            <button id="theme-toggle" class="theme-toggle" aria-label="Thema wisselen">🌗</button>
-        </div>
-    </header>
-
-    <!-- Leeftijdsverificatie modal -->
-    <div id="age-modal" class="age-modal">
+    <div id="age-modal" class="age-modal" aria-hidden="true">
         <div class="age-modal-content">
+            <p class="eyebrow">18+</p>
             <h2>Leeftijdsverificatie</h2>
-            <p>Deze website bevat inhoud voor volwassenen (18+). Bevestig dat je 18 jaar of ouder bent om verder te gaan.</p>
-            <button id="age-confirm-btn" class="btn" onclick="confirmAge()">Ik ben 18 jaar of ouder</button>
+            <p>Deze website is uitsluitend bedoeld voor volwassenen. Bevestig dat je 18 jaar of ouder bent om verder te gaan.</p>
+            <button id="age-confirm-btn" class="btn btn-primary" type="button" onclick="confirmAge()">Ik ben 18+</button>
         </div>
     </div>
 
-    <!-- Contact hero section -->
-    <section class="hero contact-hero">
-        <div class="container">
-            <h1>Neem contact op</h1>
-            <p>Heb je vragen, wil je een sessie plannen of ben je benieuwd naar de mogelijkheden? Vul het formulier in of neem direct contact op.</p>
+    <header class="site-header">
+        <div class="container header-bar">
+            <a href="index.html" class="logo">Isla Vayne</a>
+            <nav class="nav" aria-label="Hoofdnavigatie">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+                <ul class="nav-menu" id="site-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="over.html">Bio</a></li>
+                    <li><a href="diensten.html">Diensten</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Schakel naar lichte modus">
+                <span>Licht</span>
+            </button>
         </div>
-    </section>
+    </header>
 
-    <!-- Contact information and form -->
-    <section class="contact-page container">
-        <div class="contact-info">
-            <h2>Contactgegevens</h2>
-            <p>Je kunt me bereiken via de volgende kanalen:</p>
-            <ul>
-                <li>
-                    <svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2.678 1.734a1 1 0 011.05-.217l5.696 2.28a1 1 0 01.622.928v3.651a1 1 0 01-.7.952l-3.3.99a8.056 8.056 0 004.577 4.577l.99-3.3a1 1 0 01.952-.7h3.651a1 1 0 01.928.622l2.28 5.696a1 1 0 01-.217 1.05l-3.778 3.778a2 2 0 01-2.09.474c-3.586-1.343-6.988-4.745-8.33-8.33a2 2 0 01.474-2.09L2.678 1.734z"/></svg>
-                    <a href="tel:+31612345678">+31 6 1234 5678</a>
-                </li>
-                <li>
-                    <svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M0 4a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H2a2 2 0 01-2-2V4zm2-.5a.5.5 0 00-.5.5v.09l7 3.5 7-3.5V4a.5.5 0 00-.5-.5H2zM1.5 6.427V12a.5.5 0 00.5.5h12a.5.5 0 00.5-.5V6.427l-6.73 3.367a.5.5 0 01-.54 0L1.5 6.427z"/></svg>
-                    <a href="mailto:info@islavayne.nl">info@islavayne.nl</a>
-                </li>
-                <li>
-                    <svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M13.5 1.5A2.5 2.5 0 0116 4v.5A2.5 2.5 0 0113.5 7H10v4.5h3.5A2.5 2.5 0 0116 14v.5A2.5 2.5 0 0113.5 17H10v3.5a.5.5 0 01-.854.353l-9.5-9.5a.5.5 0 010-.707l9.5-9.5A.5.5 0 0110 1.5V5h3.5z"/></svg>
-                    <span>Rotterdam, Nederland</span>
-                </li>
-            </ul>
-            <div class="social-icons">
-                <a href="#" aria-label="Instagram" class="icon instagram">
-                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path d="M8 3.001a4.999 4.999 0 100 9.998 4.999 4.999 0 000-9.998zM5.5 8a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0z"/>
-                        <path d="M13.6 0H2.4A2.4 2.4 0 000 2.4v11.2A2.4 2.4 0 002.4 16h11.2a2.4 2.4 0 002.4-2.4V2.4A2.4 2.4 0 0013.6 0zm-1.9 2.2a.7.7 0 11-1.4 0 .7.7 0 011.4 0zM8 4.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/>
-                    </svg>
-                </a>
-                <a href="#" aria-label="Twitter" class="icon twitter">
-                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path d="M5.26 15C11.44 15 14.83 9.33 14.83 4.42c0-.16 0-.33-.01-.49A6.57 6.57 0 0016 2.85a6.37 6.37 0 01-1.89.52 3.33 3.33 0 001.44-1.84 6.56 6.56 0 01-2.09.8 3.29 3.29 0 00-5.61 2.99A9.38 9.38 0 011.1 2.36 3.28 3.28 0 002.14 7.2a3.27 3.27 0 01-1.49-.41v.04a3.29 3.29 0 002.63 3.22 3.3 3.3 0 01-1.48.06 3.29 3.29 0 003.07 2.28A6.6 6.6 0 010 13.3a9.3 9.3 0 005.06 1.49"/>
-                    </svg>
-                </a>
-                <a href="mailto:info@islavayne.nl" aria-label="E-mail" class="icon email">
-                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path d="M0 4a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H2a2 2 0 01-2-2V4zm2-.5a.5.5 0 00-.5.5v.09l7 3.5 7-3.5V4a.5.5 0 00-.5-.5H2zM1.5 6.427V12a.5.5 0 00.5.5h12a.5.5 0 00.5-.5V6.427l-6.73 3.367a.5.5 0 01-.54 0L1.5 6.427z"/>
-                    </svg>
-                </a>
+    <main class="page-shell">
+        <section class="page-hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Contact</p>
+                    <h1>Voor boekingen, online aanvragen en vragen.</h1>
+                    <p>Wil je contact opnemen? Vermeld het liefst direct om welke dienst het gaat, welke duur je in gedachten hebt en of je voorkeur uitgaat naar online of real life.</p>
+                </div>
+                <div class="hero-visual">
+                    <div class="portrait-card portrait-card-offset">
+                        <img src="images/isla_2.png" alt="Portret van Isla Vayne">
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="contact-form">
-            <h2>Stuur een bericht</h2>
-            <form id="contact-form" onsubmit="event.preventDefault(); document.getElementById('form-message').textContent='Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.'; document.getElementById('form-message').style.display='block'; this.reset();">
-                <label for="naam">Naam</label>
-                <input type="text" id="naam" name="naam" required>
+        </section>
 
-                <label for="email">E‑mail</label>
-                <input type="email" id="email" name="email" required>
+        <section class="section section-tight">
+            <div class="container contact-layout">
+                <div class="contact-panel">
+                    <div class="section-card">
+                        <p class="eyebrow">Zo werk ik het liefst</p>
+                        <h2>Duidelijk, stijlvol en zonder ruis.</h2>
+                        <p>Hoe concreter je bericht, hoe sneller ik kan inschatten wat past. Laat dus gerust meteen weten waar je interesse naar uitgaat.</p>
+                        <div class="contact-steps">
+                            <article class="step-card">
+                                <h3>Boeking</h3>
+                                <p>Noem jouw gewenste datum, duur en type sessie.</p>
+                            </article>
+                            <article class="step-card">
+                                <h3>Online</h3>
+                                <p>Geef aan of het gaat om training, custom video of videobellen.</p>
+                            </article>
+                            <article class="step-card">
+                                <h3>Wishlist</h3>
+                                <p>Voor Throne of tribute-vragen kun je dat hier ook aangeven.</p>
+                            </article>
+                        </div>
+                        <div class="hero-actions">
+                            <a href="diensten.html" class="btn btn-secondary">Bekijk diensten</a>
+                            <a href="wishlist.html" class="btn btn-ghost">Naar wishlist</a>
+                        </div>
+                    </div>
+                </div>
 
-                <label for="onderwerp">Onderwerp</label>
-                <input type="text" id="onderwerp" name="onderwerp" required>
+                <div class="contact-form-card">
+                    <form id="contact-form" class="contact-form">
+                        <label for="naam">Naam</label>
+                        <input type="text" id="naam" name="naam" autocomplete="name" required>
 
-                <label for="bericht">Bericht</label>
-                <textarea id="bericht" name="bericht" rows="6" required></textarea>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
 
-                <button type="submit">Verstuur</button>
-            </form>
-            <p id="form-message" aria-live="polite"></p>
-        </div>
-    </section>
+                        <label for="soort">Ik neem contact op voor</label>
+                        <select id="soort" name="soort" required>
+                            <option value="">Maak een keuze</option>
+                            <option value="weektraining">Weektraining</option>
+                            <option value="maandtraining">Maandtraining</option>
+                            <option value="custom-video">Custom video</option>
+                            <option value="videobellen">Videobellen</option>
+                            <option value="real-life">Real life boeking</option>
+                            <option value="wishlist">Wishlist / Tribute</option>
+                            <option value="anders">Anders</option>
+                        </select>
 
-    <!-- Optional map section with embed from OpenStreetMap -->
-    <section class="map-section">
-        <div class="container">
-            <h2>Onze locatie</h2>
-            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=4.462%2C51.91%2C4.53%2C51.95&amp;layer=mapnik" style="border:1px solid #ccc; width:100%; height:300px" allowfullscreen title="Kaart van Rotterdam"></iframe>
-        </div>
-    </section>
+                        <label for="voorkeur">Voorkeur / datum</label>
+                        <input type="text" id="voorkeur" name="voorkeur" placeholder="Bijvoorbeeld: eind mei, avond, 1 uur">
 
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <p>&copy; 2026 Isla Vayne. Alle rechten voorbehouden.</p>
-            <div class="social-icons">
-                <a href="#" aria-label="Instagram" class="icon instagram" style="color: var(--secondary-color);">
-                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path d="M8 3.001a4.999 4.999 0 100 9.998 4.999 4.999 0 000-9.998zM5.5 8a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0z"/>
-                        <path d="M13.6 0H2.4A2.4 2.4 0 000 2.4v11.2A2.4 2.4 0 002.4 16h11.2a2.4 2.4 0 002.4-2.4V2.4A2.4 2.4 0 0013.6 0zm-1.9 2.2a.7.7 0 11-1.4 0 .7.7 0 011.4 0zM8 4.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/>
-                    </svg>
-                </a>
-                <a href="#" aria-label="Twitter" class="icon twitter" style="color: var(--secondary-color);">
-                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path d="M5.26 15C11.44 15 14.83 9.33 14.83 4.42c0-.16 0-.33-.01-.49A6.57 6.57 0 0016 2.85a6.37 6.37 0 01-1.89.52 3.33 3.33 0 001.44-1.84 6.56 6.56 0 01-2.09.8 3.29 3.29 0 00-5.61 2.99A9.38 9.38 0 011.1 2.36 3.28 3.28 0 002.14 7.2a3.27 3.27 0 01-1.49-.41v.04a3.29 3.29 0 002.63 3.22 3.3 3.3 0 01-1.48.06 3.29 3.29 0 003.07 2.28A6.6 6.6 0 010 13.3a9.3 9.3 0 005.06 1.49"/>
-                    </svg>
-                </a>
-                <a href="mailto:info@islavayne.nl" aria-label="E-mail" class="icon email" style="color: var(--secondary-color);">
-                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path d="M0 4a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H2a2 2 0 01-2-2V4zm2-.5a.5.5 0 00-.5.5v.09l7 3.5 7-3.5V4a.5.5 0 00-.5-.5H2zM1.5 6.427V12a.5.5 0 00.5.5h12a.5.5 0 00.5-.5V6.427l-6.73 3.367a.5.5 0 01-.54 0L1.5 6.427z"/>
-                    </svg>
-                </a>
+                        <label for="bericht">Bericht</label>
+                        <textarea id="bericht" name="bericht" rows="7" placeholder="Vertel kort waar je interesse naar uitgaat." required></textarea>
+
+                        <button type="submit" class="btn btn-primary">Verstuur aanvraag</button>
+                        <p id="form-message" class="form-message" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <p class="eyebrow">Isla Vayne</p>
+                <p class="footer-text">Een luxe, volwassen setting voor bio, diensten, tribute en contact.</p>
+            </div>
+            <div class="footer-links">
+                <a href="over.html">Bio</a>
+                <a href="diensten.html">Diensten</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-note">
+                <p>18+ only</p>
+                <p>Alle aanvragen uitsluitend voor volwassenen.</p>
             </div>
         </div>
     </footer>
-
-    <script src="assets/js/script.js"></script>
 </body>
 </html>

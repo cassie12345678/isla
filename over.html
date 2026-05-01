@@ -4,138 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio – Isla Vayne</title>
+    <title>Bio | Isla Vayne</title>
+    <meta name="description" content="Lees de bio van Isla Vayne en ontdek meer over haar stijl, energie en manier van werken.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Simonetta:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="assets/js/script.js"></script>
 </head>
 <body>
-    <header class="site-header">
-        <div class="container flex-between">
-            <a href="index.html" class="logo">Isla Vayne</a>
-            <nav class="nav">
-                <button class="nav-toggle" aria-label="Menu openen">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="over.html" class="active">Bio</a></li>
-                    <li><a href="diensten.html">Diensten</a></li>
-                    <li><a href="bundels.html">Bundels</a></li>
-                    <li><a href="merchandise.html">Merchandise</a></li>
-                    <li><a href="memberships.html">Memberships</a></li>
-                    <li><a href="boeking.html">Boeking</a></li>
-                    <li><a href="galerij.html">Galerij</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="links.html">Links</a></li>
-                </ul>
-            </nav>
-            <button id="theme-toggle" class="theme-toggle" aria-label="Thema wisselen">🌗</button>
-        </div>
-    </header>
-
-    <!-- Leeftijdsverificatie modal -->
-    <div id="age-modal" class="age-modal">
+    <div id="age-modal" class="age-modal" aria-hidden="true">
         <div class="age-modal-content">
+            <p class="eyebrow">18+</p>
             <h2>Leeftijdsverificatie</h2>
-            <p>Deze website bevat inhoud voor volwassenen (18+). Bevestig dat je 18 jaar of ouder bent om verder te gaan.</p>
-            <button id="age-confirm-btn" class="btn" onclick="confirmAge()">Ik ben 18 jaar of ouder</button>
+            <p>Deze website is uitsluitend bedoeld voor volwassenen. Bevestig dat je 18 jaar of ouder bent om verder te gaan.</p>
+            <button id="age-confirm-btn" class="btn btn-primary" type="button" onclick="confirmAge()">Ik ben 18+</button>
         </div>
     </div>
 
-    <header class="page-header">
-        <h1>Over Isla Vayne</h1>
+    <header class="site-header">
+        <div class="container header-bar">
+            <a href="index.html" class="logo">Isla Vayne</a>
+            <nav class="nav" aria-label="Hoofdnavigatie">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+                <ul class="nav-menu" id="site-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="over.html" class="active">Bio</a></li>
+                    <li><a href="diensten.html">Diensten</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Schakel naar lichte modus">
+                <span>Licht</span>
+            </button>
+        </div>
     </header>
 
-    <main class="container">
-        <section class="about-section">
-            <h2>Wie ben ik?</h2>
-            <p>Ik ben Isla Vayne, een Nederlandse meesteres met een passie voor de kunst van dominantie en de transformatieve kracht ervan. Sinds mijn jeugd ben ik gefascineerd door de dynamiek van kracht, overgave en vertrouwen. Na jaren van studie en zelfontwikkeling heb ik mijn roeping gevonden in het begeleiden van mensen naar hun eigen vrijheid en zelfontdekking.</p>
-            <p>Mijn benadering is empathisch en holistisch; ik combineer coaching, ritueel en avontuur om een unieke ervaring te creëren die voorbij gaat aan traditionele stereotypes. Als Rotterdamse geniet ik ervan om mijn liefde voor de Nederlandse cultuur en landschap te integreren in mijn werk.</p>
+    <main class="page-shell">
+        <section class="page-hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Bio</p>
+                    <h1>Intro verhaal over mezelf.</h1>
+                    <p>Ik ben Isla Vayne. Mijn wereld draait om de kunst van aanwezigheid: een sfeer neerzetten, grenzen scherp krijgen en precies weten wanneer zachtheid plaatsmaakt voor controle.</p>
+                    <p>Voor mij gaat het niet om haast. Ik hou van spanning die wordt opgebouwd, van duidelijke kaders en van een dynamiek waarin vertrouwen de basis vormt.</p>
+                </div>
+                <div class="hero-visual">
+                    <div class="portrait-card portrait-card-offset">
+                        <img src="images/isla_2.png" alt="Portret van Isla Vayne">
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="about-section">
-            <h2>Missie &amp; visie</h2>
-            <p>Mijn missie is om mensen te helpen hun grenzen te verkennen en te verleggen op een veilige, respectvolle manier. Ik geloof dat dominantie een pad kan zijn naar zelfvertrouwen en innerlijke rust, mits uitgevoerd met wederzijds respect en consent. Ik streef ernaar om een omgeving te bieden waarin je jezelf kunt ontdekken, je verlangens kunt uitspreken en je fantasie kunt laten bloeien.</p>
-            <p>Visueel geïnspireerd door de rijke geschiedenis en de bruisende energie van Nederland, probeer ik elk traject te doordrenken met schoonheid, kunst en natuur. Of je nu kiest voor een persoonlijke sessie of een avontuurlijke reis langs windmolens en grachten, je bent in goede handen.</p>
+
+        <section class="section">
+            <div class="container story-grid">
+                <div class="section-card story-copy">
+                    <p class="eyebrow">Wie ik ben</p>
+                    <h2>Vrouwelijk, direct en stijlbewust.</h2>
+                    <p>Ik voel me thuis in een wereld van luxe details, sterke energie en ritme. Mensen die bij mij komen, zoeken vaak niet alleen intensiteit, maar ook focus, aandacht en een duidelijke leiding.</p>
+                    <p>Ik geloof dat echte overgave pas ontstaat wanneer communicatie helder is. Daarom werk ik met rust, precisie en respect voor grenzen. Juist daar ontstaat ruimte voor spanning, verdieping en een ervaring die blijft hangen.</p>
+                    <p>Mijn uitstraling is donker, rijk en elegant, met bordeaux, goud en leer als vanzelfsprekende verlenging van mijn sfeer. Geen chaos, maar controle met intentie.</p>
+                </div>
+                <div class="section-card story-side">
+                    <p class="eyebrow">Mijn stijl</p>
+                    <ul class="bullet-list">
+                        <li>Luxe en vrouwelijke kracht</li>
+                        <li>Discretie en volwassen energie</li>
+                        <li>Structuur, discipline en aandacht</li>
+                        <li>Een duidelijke balans tussen spanning en rust</li>
+                    </ul>
+                    <blockquote class="quote-panel">Controle voelt het sterkst wanneer alles daaromheen klopt.</blockquote>
+                </div>
+            </div>
         </section>
-        <section class="about-section">
-            <h2>Mijn reis</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="circle"></div>
-                    <div class="content">
-                        <h3>2018 – Eerste stappen</h3>
-                        <p>Mijn persoonlijke verkenning van de dominantie wereld begon. Ik verdiepte me in psychologie, consent en de geschiedenis van BDSM.</p>
+
+        <section class="section section-tight">
+            <div class="container feature-split">
+                <div class="section-card">
+                    <p class="eyebrow">Wat je kunt verwachten</p>
+                    <h2>Geen haast, wel richting.</h2>
+                    <p>Of het nu online is of real life, ik werk het liefst met mensen die bewust kiezen. Iemand die weet dat spanning sterker wordt wanneer de opbouw klopt, en dat wederzijds respect nooit onderhandelbaar is.</p>
+                    <p>Voor mij is stijl niet alleen wat je ziet, maar ook wat je voelt in de manier waarop iets wordt geleid. Helder, verfijnd en met volledige aandacht.</p>
+                    <div class="hero-actions">
+                        <a href="diensten.html" class="btn btn-primary">Bekijk diensten</a>
+                        <a href="contact.html" class="btn btn-ghost">Neem contact op</a>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="circle"></div>
-                    <div class="content">
-                        <h3>2021 – Professionele meesteres</h3>
-                        <p>Ik besloot mijn passie om te zetten in een beroep. Ik startte met het aanbieden van privé sessies en coaching gericht op persoonlijke ontwikkeling.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="circle"></div>
-                    <div class="content">
-                        <h3>2023 – Uitbreiding &amp; reizen</h3>
-                        <p>Naast sessies begon ik exclusieve reisarrangementen te organiseren naar iconische plekken zoals Kinderdijk en Amsterdam om mijn liefde voor cultuur te delen.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="circle"></div>
-                    <div class="content">
-                        <h3>2025 – Blog &amp; community</h3>
-                        <p>Ik lanceerde mijn blog om mijn ervaringen, reflecties en tips te delen met een breder publiek en om een community van gelijkgestemden op te bouwen.</p>
+                <div class="image-stack image-stack-single">
+                    <div class="stack-card large">
+                        <img src="images/isla_1.png" alt="Isla Vayne in een rode look">
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
-        <div class="container footer-content">
-            <div class="footer-left">
-                <h3>Contact</h3>
-                <p>Email: <a href="mailto:info@islavayne.nl">info@islavayne.nl</a></p>
-                <p>Telefoon: <a href="tel:+31612345678">+31 6 1234 5678</a></p>
-                <p>Locatie: Rotterdam, Nederland</p>
+        <div class="container footer-grid">
+            <div>
+                <p class="eyebrow">Isla Vayne</p>
+                <p class="footer-text">Een luxe, volwassen setting voor bio, diensten, tribute en contact.</p>
             </div>
-            <ul class="social-icons">
-                <li>
-                    <a href="https://twitter.com/IslaVayne" aria-label="Twitter">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" role="img">
-                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/IslaVayne" aria-label="Instagram">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" role="img">
-                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:info@islavayne.nl" aria-label="Email">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" role="img">
-                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="tel:+31612345678" aria-label="Telefoon">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" role="img">
-                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-            <div class="footer-right">
-                <p>© 2026 Isla Vayne. Alle rechten voorbehouden.</p>
+            <div class="footer-links">
+                <a href="over.html">Bio</a>
+                <a href="diensten.html">Diensten</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-note">
+                <p>18+ only</p>
+                <p>Alle aanvragen uitsluitend voor volwassenen.</p>
             </div>
         </div>
     </footer>
