@@ -1,19 +1,19 @@
 :root {
     --font-body: "Manrope", sans-serif;
     --font-heading: "Simonetta", serif;
-    --bg-color: #12070f;
-    --bg-soft: rgba(51, 18, 35, 0.72);
-    --surface: rgba(34, 12, 24, 0.82);
-    --surface-strong: rgba(46, 14, 31, 0.94);
+    --bg-color: #1f0814;
+    --bg-soft: rgba(74, 20, 42, 0.74);
+    --surface: rgba(49, 14, 30, 0.84);
+    --surface-strong: rgba(68, 18, 39, 0.94);
     --surface-light: rgba(255, 245, 240, 0.92);
     --text-color: #f8ede8;
     --text-muted: rgba(248, 237, 232, 0.76);
     --heading-color: #fff7f1;
-    --accent: #8a183e;
-    --accent-strong: #b11d52;
-    --accent-soft: rgba(177, 29, 82, 0.2);
-    --gold: #d2a65a;
-    --gold-soft: rgba(210, 166, 90, 0.18);
+    --accent: #8c173c;
+    --accent-strong: #b01d4d;
+    --accent-soft: rgba(176, 29, 77, 0.22);
+    --gold: #d7ab62;
+    --gold-soft: rgba(215, 171, 98, 0.2);
     --border: rgba(255, 255, 255, 0.09);
     --shadow: 0 24px 60px rgba(0, 0, 0, 0.34);
     --radius: 28px;
@@ -22,18 +22,18 @@
 }
 
 body.theme-light {
-    --bg-color: #f6ece7;
-    --bg-soft: rgba(255, 250, 247, 0.75);
-    --surface: rgba(255, 250, 247, 0.88);
-    --surface-strong: rgba(255, 252, 249, 0.94);
+    --bg-color: #f4e8e5;
+    --bg-soft: rgba(252, 244, 241, 0.8);
+    --surface: rgba(255, 247, 244, 0.9);
+    --surface-strong: rgba(255, 250, 247, 0.95);
     --text-color: #2d1620;
     --text-muted: rgba(45, 22, 32, 0.72);
     --heading-color: #1f0e15;
-    --accent: #8f153e;
-    --accent-strong: #b61a50;
-    --accent-soft: rgba(143, 21, 62, 0.1);
-    --gold: #b88635;
-    --gold-soft: rgba(184, 134, 53, 0.15);
+    --accent: #8b193d;
+    --accent-strong: #ae2853;
+    --accent-soft: rgba(139, 25, 61, 0.12);
+    --gold: #b98a3d;
+    --gold-soft: rgba(185, 138, 61, 0.16);
     --border: rgba(45, 22, 32, 0.12);
     --shadow: 0 24px 55px rgba(103, 57, 70, 0.14);
 }
@@ -55,9 +55,10 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     background:
-        radial-gradient(circle at top left, rgba(177, 29, 82, 0.18), transparent 34%),
-        radial-gradient(circle at bottom right, rgba(210, 166, 90, 0.12), transparent 30%),
-        linear-gradient(180deg, rgba(12, 3, 9, 0.9), rgba(18, 7, 15, 0.96)),
+        radial-gradient(circle at top left, rgba(176, 29, 77, 0.28), transparent 36%),
+        radial-gradient(circle at center right, rgba(121, 18, 53, 0.18), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(215, 171, 98, 0.1), transparent 28%),
+        linear-gradient(180deg, rgba(31, 7, 18, 0.92), rgba(49, 10, 28, 0.97)),
         url("../../images/isla-gallery-22.jpeg") center top / cover fixed;
     position: relative;
     overflow-x: hidden;
@@ -65,9 +66,10 @@ body {
 
 body.theme-light {
     background:
-        radial-gradient(circle at top left, rgba(143, 21, 62, 0.08), transparent 34%),
-        radial-gradient(circle at bottom right, rgba(184, 134, 53, 0.1), transparent 30%),
-        linear-gradient(180deg, rgba(249, 241, 236, 0.94), rgba(246, 236, 231, 0.97)),
+        radial-gradient(circle at top left, rgba(139, 25, 61, 0.12), transparent 34%),
+        radial-gradient(circle at center right, rgba(176, 29, 77, 0.08), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(185, 138, 61, 0.08), transparent 28%),
+        linear-gradient(180deg, rgba(249, 239, 236, 0.95), rgba(244, 232, 229, 0.98)),
         url("../../images/isla-gallery-22.jpeg") center top / cover fixed;
 }
 
@@ -86,7 +88,7 @@ body::before {
     width: 340px;
     height: 340px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(210, 166, 90, 0.12), transparent 68%);
+    background: radial-gradient(circle, rgba(215, 171, 98, 0.14), transparent 68%);
 }
 
 body::after {
@@ -95,7 +97,7 @@ body::after {
     width: 360px;
     height: 360px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(177, 29, 82, 0.16), transparent 68%);
+    background: radial-gradient(circle, rgba(176, 29, 77, 0.2), transparent 68%);
 }
 
 img {
@@ -134,12 +136,12 @@ button {
     top: 0;
     z-index: 30;
     border-bottom: 1px solid var(--border);
-    background: rgba(18, 7, 15, 0.72);
+    background: rgba(42, 11, 25, 0.78);
     backdrop-filter: blur(18px);
 }
 
 body.theme-light .site-header {
-    background: rgba(246, 236, 231, 0.78);
+    background: rgba(249, 239, 236, 0.82);
 }
 
 .header-bar {
@@ -255,6 +257,11 @@ body.theme-light .site-header {
 .hero-copy h1 {
     font-size: clamp(2.7rem, 6vw, 5.15rem);
     margin-bottom: 1rem;
+}
+
+.hero-copy-bio h1,
+.page-card-bio h3 {
+    color: var(--gold);
 }
 
 .hero-copy p {
@@ -815,14 +822,14 @@ body.theme-light .site-header {
 .site-footer {
     padding: 1.75rem 0 2rem;
     border-top: 1px solid var(--border);
-    background: rgba(13, 5, 11, 0.5);
+    background: rgba(35, 10, 22, 0.58);
     backdrop-filter: blur(12px);
     position: relative;
     z-index: 1;
 }
 
 body.theme-light .site-footer {
-    background: rgba(255, 252, 249, 0.6);
+    background: rgba(251, 244, 241, 0.68);
 }
 
 .footer-grid {
