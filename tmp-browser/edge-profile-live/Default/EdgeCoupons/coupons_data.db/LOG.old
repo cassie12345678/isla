@@ -1,0 +1,12 @@
+2026/05/01-15:03:43.868 6a0 Reusing MANIFEST C:\Users\casbe\OneDrive\Documents\GitHub\isla\tmp-browser\edge-profile-live\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/05/01-15:03:43.869 6a0 Recovering log #22
+2026/05/01-15:03:43.907 6a0 Level-0 table #25: started
+2026/05/01-15:03:43.912 6a0 Level-0 table #25: 682232 bytes OK
+2026/05/01-15:03:43.913 6a0 Recovering log #24
+2026/05/01-15:03:43.914 6a0 Reusing old log C:\Users\casbe\OneDrive\Documents\GitHub\isla\tmp-browser\edge-profile-live\Default\EdgeCoupons/coupons_data.db/000024.log 
+2026/05/01-15:03:43.917 6a0 Delete type=0 #22
+2026/05/01-15:03:43.984 4d18 Level-0 table #27: started
+2026/05/01-15:03:43.990 4d18 Level-0 table #27: 682232 bytes OK
+2026/05/01-15:03:43.993 4d18 Delete type=0 #24
+2026/05/01-15:03:43.994 11f4 Compacting 4@0 + 1@1 files
+2026/05/01-15:03:43.999 11f4 compacted to: files[ 4 1 0 0 0 0 0 ]

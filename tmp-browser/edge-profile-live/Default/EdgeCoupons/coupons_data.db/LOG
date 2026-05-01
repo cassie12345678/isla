@@ -1,0 +1,5 @@
+2026/05/01-15:04:24.352 17cc Reusing MANIFEST C:\Users\casbe\OneDrive\Documents\GitHub\isla\tmp-browser\edge-profile-live\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/05/01-15:04:24.352 17cc Recovering log #26
+2026/05/01-15:04:24.353 17cc Reusing old log C:\Users\casbe\OneDrive\Documents\GitHub\isla\tmp-browser\edge-profile-live\Default\EdgeCoupons/coupons_data.db/000026.log 
+2026/05/01-15:04:24.354 72b4 Compacting 4@0 + 1@1 files
+2026/05/01-15:04:24.359 72b4 compacted to: files[ 4 1 0 0 0 0 0 ]

@@ -1,0 +1,11 @@
+{"logTime": "0501/122027", {"lineNo":0,"logLevel":2,"message":"MaybeOrchestrateMigration: MaybeOrchestrateMigration","source":"Workspace Migration","timestamp":"2026-05-01T12:20:27.374Z"}}
+{"logTime": "0501/122027", {"lineNo":0,"logLevel":2,"message":"Migrate_FeatureCheck: Migrate_FeatureCheck","source":"Workspace Migration","timestamp":"2026-05-01T12:20:27.374Z"}}
+{"logTime": "0501/122027", {"lineNo":0,"logLevel":2,"message":"MaybeWaitForPrefsToSync: Waiting for prefs to sync.","source":"Workspace Migration","timestamp":"2026-05-01T12:20:27.374Z"}}
+{"logTime": "0501/122027", {"lineNo":0,"logLevel":2,"message":"MaybeOrchestrateMigration: ~MaybeOrchestrateMigration","source":"Workspace Migration","timestamp":"2026-05-01T12:20:27.374Z"}}
+{"logTime": "0501/122029", {"lineNo":0,"logLevel":2,"message":"Migrate_MaybeHavePrefs: Migrate_MaybeHavePrefs","source":"Workspace Migration","timestamp":"2026-05-01T12:20:28.973Z"}}
+{"logTime": "0501/122029", {"lineNo":0,"logLevel":2,"message":"Migrate_Schedule: Migrate_Schedule","source":"Workspace Migration","timestamp":"2026-05-01T12:20:29.164Z"}}
+{"logTime": "0501/122029", {"lineNo":0,"logLevel":2,"message":"Migrate_Schedule: No workspaces enabled, skipping migration as it's trivial","source":"Workspace Migration","timestamp":"2026-05-01T12:20:29.164Z"}}
+{"logTime": "0501/122029", {"lineNo":0,"logLevel":2,"message":"Log: Migrate_Complete","source":"Workspace Migration","timestamp":"2026-05-01T12:20:29.165Z"}}
+{"logTime": "0501/122029", {"lineNo":0,"logLevel":2,"message":"SetMigrationFluidPrefCompleted: SetMigrationFluidPrefCompleted","source":"Workspace Migration","timestamp":"2026-05-01T12:20:29.165Z"}}
+{"logTime": "0501/122029", {"lineNo":0,"logLevel":4,"message":"SetMigrationFluidPrefCompleted: SetFluidMigrationStatus failed with fluid error code: { fluid_error_code: FluidPageProxyNotFound, tag: 0, is_owner: true}","source":"Workspace Migration","timestamp":"2026-05-01T12:20:29.165Z"}}
+{"logTime": "0501/122029", {"lineNo":0,"logLevel":2,"message":"SetMigrationPrefsCompleted: SetMigrationPrefsCompleted","source":"Workspace Migration","timestamp":"2026-05-01T12:20:29.165Z"}}

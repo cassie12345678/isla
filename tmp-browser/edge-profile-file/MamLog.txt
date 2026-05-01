@@ -1,0 +1,114 @@
+[2026-05-01T12:29:03.455Z] [INFO] ========================================================================================================================
+[2026-05-01T12:29:03.455Z] [INFO] Initializing MAM Client.
+App: com.microsoft.edge 147.0.3912.86
+SDK: 2.1.367.0
+OS: windows 10.0.26200.8246
+DeviceType: Desktop
+Manufacturer: SAMSUNG ELECTRONICS CO., LTD.
+Model: 750XGK
+Telemetry: yes
+Managed device support: enabled
+[2026-05-01T12:29:03.455Z] [INFO] Telemetry session c71977d6-7fa0-4628-91c8-129b5a08e593.
+[2026-05-01T12:29:03.455Z] [INFO] Initializing cache (v1).
+[2026-05-01T12:29:03.477Z] [INFO] Registered UserID:163bc456-af02-4321-9b33-7d23266bacf9 in the Azure public cloud.
+[2026-05-01T12:29:03.477Z] [INFO] Conditional Access is blocked for UserID:163bc456-af02-4321-9b33-7d23266bacf9 pre-enrollment; compliance reporting will be accelerated to unblock the user.
+[2026-05-01T12:29:03.477Z] [INFO] Queuing pre-enrollment policy assignment check for UserID:163bc456-af02-4321-9b33-7d23266bacf9 to run as soon as possible.
+[2026-05-01T12:29:03.477Z] [INFO] Scheduler background thread starting for UserID:163bc456-af02-4321-9b33-7d23266bacf9.
+[2026-05-01T12:29:03.609Z] [INFO] Resolved MAM Location Service address "https://mamservice.manage.microsoft.com/api/Locations" for UserID:163bc456-af02-4321-9b33-7d23266bacf9.
+[2026-05-01T12:29:03.924Z] [INFO] Request to MAM Location Service for UserID:163bc456-af02-4321-9b33-7d23266bacf9 complete. (client-request-id:2f68fd16-7bb5-4810-a702-8074fdd23312)
+[2026-05-01T12:29:03.930Z] [INFO] Telemetry collector for general events changed to EUDB.
+[2026-05-01T12:29:03.930Z] [INFO] Cached new MAM location data for UserID:163bc456-af02-4321-9b33-7d23266bacf9 at https://mamservice.manage.microsoft.com/proxy/StatelessApplicationManagementService with an expiration time of 2026-05-15T12:29:03.000Z.
+[2026-05-01T12:29:04.099Z] [INFO] Requested check for MAM policy assignment to the MAM Service for UserID:163bc456-af02-4321-9b33-7d23266bacf9 is complete. (client-request-id:18237e3d-4ea4-47cb-89be-7c75090ea25c)
+[2026-05-01T12:29:04.102Z] [INFO] UserID:163bc456-af02-4321-9b33-7d23266bacf9 is not assigned MAM policy for this application on this platform; enrollment will be skipped for now, and the user's policy assignments will be checked again automatically at a later time.
+[2026-05-01T12:29:04.102Z] [INFO] Queuing pre-enrollment policy assignment check for UserID:163bc456-af02-4321-9b33-7d23266bacf9 to run at 2026-05-02T00:29:04.102Z.
+[2026-05-01T12:29:04.339Z] [INFO] Shutting down.
+[2026-05-01T12:29:04.339Z] [INFO] Stopping the task scheduler and canceling any outstanding work items...
+[2026-05-01T12:29:04.339Z] [INFO] Scheduler background thread for UserID:163bc456-af02-4321-9b33-7d23266bacf9 is exiting after completing the last task.
+[2026-05-01T12:29:04.340Z] [INFO] Task scheduler has stopped, and all work has been canceled.
+[2026-05-01T12:29:05.155Z] [INFO] ========================================================================================================================
+[2026-05-01T12:29:05.155Z] [INFO] Initializing MAM Client.
+App: com.microsoft.edge 147.0.3912.86
+SDK: 2.1.367.0
+OS: windows 10.0.26200.8246
+DeviceType: Desktop
+Manufacturer: SAMSUNG ELECTRONICS CO., LTD.
+Model: 750XGK
+Telemetry: yes
+Managed device support: enabled
+[2026-05-01T12:29:05.155Z] [INFO] Telemetry session f424c74b-7a7e-4676-8196-144a6c6aedac.
+[2026-05-01T12:29:05.173Z] [INFO] Telemetry collector for general events changed to EUDB.
+[2026-05-01T12:29:05.173Z] [INFO] Restored UserID:163bc456-af02-4321-9b33-7d23266bacf9
+Azure public cloud
+https://mamservice.manage.microsoft.com/proxy/StatelessApplicationManagementService
+[2026-05-01T12:29:05.173Z] [INFO] Reinitialized cache (v1).
+[2026-05-01T12:29:05.173Z] [INFO] Scheduler background thread starting for UserID:163bc456-af02-4321-9b33-7d23266bacf9.
+[2026-05-01T12:29:05.173Z] [INFO] Re-queuing pre-enrollment check for UserID:163bc456-af02-4321-9b33-7d23266bacf9.
+[2026-05-01T12:29:05.173Z] [INFO] Queuing pre-enrollment policy assignment check for UserID:163bc456-af02-4321-9b33-7d23266bacf9 to run as soon as possible.
+[2026-05-01T12:29:05.176Z] [ERROR] The application could not supply an access token on request for UserID:163bc456-af02-4321-9b33-7d23266bacf9.
+Reason: 0
+User not found: token fetch aborted.
+[2026-05-01T12:29:05.176Z] [WARNING] Unable to acquire an access token during check for MAM policy assignment for UserID:163bc456-af02-4321-9b33-7d23266bacf9.
+[2026-05-01T12:29:05.176Z] [ERROR] An unexpected error occurred during check for MAM policy assignment for UserID:163bc456-af02-4321-9b33-7d23266bacf9; the operation will be reattempted after a brief delay on local conditions.
+[2026-05-01T12:29:06.403Z] [INFO] Shutting down.
+[2026-05-01T12:29:06.404Z] [INFO] Stopping the task scheduler and canceling any outstanding work items...
+[2026-05-01T12:29:06.404Z] [INFO] The check for MAM policy assignment reattempt for UserID:163bc456-af02-4321-9b33-7d23266bacf9 needs to be postponed due to application shutdown.
+[2026-05-01T12:29:06.404Z] [INFO] Scheduler background thread for UserID:163bc456-af02-4321-9b33-7d23266bacf9 is exiting after completing the last task.
+[2026-05-01T12:29:06.404Z] [INFO] Task scheduler has stopped, and all work has been canceled.
+[2026-05-01T12:29:06.973Z] [INFO] ========================================================================================================================
+[2026-05-01T12:29:06.973Z] [INFO] Initializing MAM Client.
+App: com.microsoft.edge 147.0.3912.86
+SDK: 2.1.367.0
+OS: windows 10.0.26200.8246
+DeviceType: Desktop
+Manufacturer: SAMSUNG ELECTRONICS CO., LTD.
+Model: 750XGK
+Telemetry: yes
+Managed device support: enabled
+[2026-05-01T12:29:06.973Z] [INFO] Telemetry session f0296d2b-ad6f-4134-a142-238079db0c74.
+[2026-05-01T12:29:07.005Z] [INFO] Telemetry collector for general events changed to EUDB.
+[2026-05-01T12:29:07.005Z] [INFO] Restored UserID:163bc456-af02-4321-9b33-7d23266bacf9
+Azure public cloud
+https://mamservice.manage.microsoft.com/proxy/StatelessApplicationManagementService
+[2026-05-01T12:29:07.005Z] [INFO] Reinitialized cache (v1).
+[2026-05-01T12:29:07.006Z] [INFO] Scheduler background thread starting for UserID:163bc456-af02-4321-9b33-7d23266bacf9.
+[2026-05-01T12:29:07.006Z] [INFO] Re-queuing pre-enrollment check for UserID:163bc456-af02-4321-9b33-7d23266bacf9.
+[2026-05-01T12:29:07.006Z] [INFO] Queuing pre-enrollment policy assignment check for UserID:163bc456-af02-4321-9b33-7d23266bacf9 to run as soon as possible.
+[2026-05-01T12:29:07.013Z] [ERROR] The application could not supply an access token on request for UserID:163bc456-af02-4321-9b33-7d23266bacf9.
+Reason: 0
+User not found: token fetch aborted.
+[2026-05-01T12:29:07.014Z] [WARNING] Unable to acquire an access token during check for MAM policy assignment for UserID:163bc456-af02-4321-9b33-7d23266bacf9.
+[2026-05-01T12:29:07.015Z] [ERROR] An unexpected error occurred during check for MAM policy assignment for UserID:163bc456-af02-4321-9b33-7d23266bacf9; the operation will be reattempted after a brief delay on local conditions.
+[2026-05-01T12:29:08.610Z] [INFO] Shutting down.
+[2026-05-01T12:29:08.611Z] [INFO] Stopping the task scheduler and canceling any outstanding work items...
+[2026-05-01T12:29:08.611Z] [INFO] The check for MAM policy assignment reattempt for UserID:163bc456-af02-4321-9b33-7d23266bacf9 needs to be postponed due to application shutdown.
+[2026-05-01T12:29:08.611Z] [INFO] Scheduler background thread for UserID:163bc456-af02-4321-9b33-7d23266bacf9 is exiting after completing the last task.
+[2026-05-01T12:29:08.612Z] [INFO] Task scheduler has stopped, and all work has been canceled.
+[2026-05-01T12:29:09.106Z] [INFO] ========================================================================================================================
+[2026-05-01T12:29:09.106Z] [INFO] Initializing MAM Client.
+App: com.microsoft.edge 147.0.3912.86
+SDK: 2.1.367.0
+OS: windows 10.0.26200.8246
+DeviceType: Desktop
+Manufacturer: SAMSUNG ELECTRONICS CO., LTD.
+Model: 750XGK
+Telemetry: yes
+Managed device support: enabled
+[2026-05-01T12:29:09.106Z] [INFO] Telemetry session 02af54a9-c5db-4c88-8317-302b039f6896.
+[2026-05-01T12:29:09.130Z] [INFO] Telemetry collector for general events changed to EUDB.
+[2026-05-01T12:29:09.130Z] [INFO] Restored UserID:163bc456-af02-4321-9b33-7d23266bacf9
+Azure public cloud
+https://mamservice.manage.microsoft.com/proxy/StatelessApplicationManagementService
+[2026-05-01T12:29:09.130Z] [INFO] Reinitialized cache (v1).
+[2026-05-01T12:29:09.130Z] [INFO] Scheduler background thread starting for UserID:163bc456-af02-4321-9b33-7d23266bacf9.
+[2026-05-01T12:29:09.131Z] [INFO] Re-queuing pre-enrollment check for UserID:163bc456-af02-4321-9b33-7d23266bacf9.
+[2026-05-01T12:29:09.131Z] [INFO] Queuing pre-enrollment policy assignment check for UserID:163bc456-af02-4321-9b33-7d23266bacf9 to run as soon as possible.
+[2026-05-01T12:29:09.131Z] [ERROR] The application could not supply an access token on request for UserID:163bc456-af02-4321-9b33-7d23266bacf9.
+Reason: 0
+User not found: token fetch aborted.
+[2026-05-01T12:29:09.131Z] [WARNING] Unable to acquire an access token during check for MAM policy assignment for UserID:163bc456-af02-4321-9b33-7d23266bacf9.
+[2026-05-01T12:29:09.131Z] [ERROR] An unexpected error occurred during check for MAM policy assignment for UserID:163bc456-af02-4321-9b33-7d23266bacf9; the operation will be reattempted after a brief delay on local conditions.
+[2026-05-01T12:29:10.949Z] [INFO] Shutting down.
+[2026-05-01T12:29:10.949Z] [INFO] Stopping the task scheduler and canceling any outstanding work items...
+[2026-05-01T12:29:10.949Z] [INFO] The check for MAM policy assignment reattempt for UserID:163bc456-af02-4321-9b33-7d23266bacf9 needs to be postponed due to application shutdown.
+[2026-05-01T12:29:10.949Z] [INFO] Scheduler background thread for UserID:163bc456-af02-4321-9b33-7d23266bacf9 is exiting after completing the last task.
+[2026-05-01T12:29:10.949Z] [INFO] Task scheduler has stopped, and all work has been canceled.

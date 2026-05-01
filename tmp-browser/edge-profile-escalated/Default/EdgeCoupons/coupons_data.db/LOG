@@ -1,0 +1,5 @@
+2026/05/01-14:20:27.502 4ca4 Creating DB C:\Users\casbe\OneDrive\Documents\GitHub\isla\tmp-browser\edge-profile-escalated\Default\EdgeCoupons/coupons_data.db since it was missing.
+2026/05/01-14:20:27.516 4ca4 Reusing MANIFEST C:\Users\casbe\OneDrive\Documents\GitHub\isla\tmp-browser\edge-profile-escalated\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/05/01-14:20:27.824 7338 Level-0 table #5: started
+2026/05/01-14:20:27.830 7338 Level-0 table #5: 682129 bytes OK
+2026/05/01-14:20:27.833 7338 Delete type=0 #3

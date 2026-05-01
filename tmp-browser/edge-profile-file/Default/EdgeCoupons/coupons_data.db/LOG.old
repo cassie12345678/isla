@@ -1,0 +1,10 @@
+2026/05/01-14:29:08.759 86e8 Reusing MANIFEST C:\Users\casbe\OneDrive\Documents\GitHub\isla\tmp-browser\edge-profile-file\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/05/01-14:29:08.759 86e8 Recovering log #4
+2026/05/01-14:29:08.762 86e8 Level-0 table #7: started
+2026/05/01-14:29:08.769 86e8 Level-0 table #7: 682232 bytes OK
+2026/05/01-14:29:08.770 86e8 Recovering log #7
+2026/05/01-14:29:08.770 86e8 Reusing old log C:\Users\casbe\OneDrive\Documents\GitHub\isla\tmp-browser\edge-profile-file\Default\EdgeCoupons/coupons_data.db/000007.log 
+2026/05/01-14:29:08.774 86e8 Delete type=0 #4
+2026/05/01-14:29:08.774 86e8 Delete type=2 #8
+2026/05/01-14:29:08.778 63e0 Level-0 table #9: started
+2026/05/01-14:29:08.785 63e0 Level-0 table #9: 682232 bytes OK
