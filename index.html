@@ -8,11 +8,11 @@
     <meta name="description" content="Ontdek de wereld van Isla Vayne met een luxe bio, online en real life diensten, een shop voor boeken en gifts, een tribute wishlist en contactmogelijkheden.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Simonetta:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Simonetta:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="assets/js/script.js"></script>
 </head>
-<body>
+<body class="page-home">
     <div id="age-modal" class="age-modal" aria-hidden="true">
         <div class="age-modal-content">
             <p class="eyebrow">18+</p>
@@ -37,123 +37,142 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Schakel naar lichte modus">
-                <span>Licht</span>
-            </button>
         </div>
     </header>
 
-    <main class="page-shell">
-        <section class="hero hero-home">
-            <div class="container hero-grid">
-                <div class="hero-copy hero-copy-home">
-                    <p class="eyebrow">18+ | Dominant | Luxe presence</p>
-                    <h1>Jij komt hier voor luxe, controle en aandacht die blijft hangen.</h1>
-                    <p>Als jij wordt aangetrokken door vrouwelijke leiding, verfijnde spanning en een wereld waarin niets zonder intentie gebeurt, dan zit je hier goed. Hier draait het om presence, richting en een exclusieve ervaring die je voelt vanaf het eerste moment.</p>
-                    <div class="hero-actions">
-                        <a href="diensten.html" class="btn btn-primary">Ontdek mijn diensten</a>
-                        <a href="over.html" class="btn btn-ghost">Lees mijn bio</a>
+    <main class="page-shell home-shell">
+        <section class="home-hero">
+            <div class="container home-hero-inner">
+                <div class="home-hero-copy">
+                    <p class="eyebrow">18+ | Nederland | Online &amp; real life</p>
+                    <h1 class="home-hero-title">
+                        <span>Isla</span>
+                        <span class="accent">Vayne</span>
+                    </h1>
+                    <p class="home-hero-tagline">Verfijnde spanning voor wie zich graag laat leiden.</p>
+                    <div class="home-hero-rule" aria-hidden="true"></div>
+                    <p class="home-hero-lead">Geen haast, geen overdaad. Alleen luxe presence, duidelijke richting en aandacht die precies weet hoe lang ze moet blijven hangen.</p>
+                    <div class="hero-actions home-hero-actions">
+                        <a href="diensten.html" class="btn btn-home-outline">Bekijk mijn diensten</a>
+                        <a href="contact.html" class="btn btn-home-solid">Neem contact op</a>
                     </div>
-                    <ul class="hero-tags">
-                        <li>Dominante luxe</li>
-                        <li>Online aandacht</li>
-                        <li>Real life presence</li>
-                        <li>Boeken &amp; gifts</li>
-                    </ul>
                 </div>
-                <div class="hero-visual hero-visual-home">
-                    <div class="portrait-card portrait-card-home">
-                        <img src="images/isla-gallery-01.jpeg" alt="Portret van Isla Vayne">
-                        <div class="hero-portrait-note">
-                            <p class="eyebrow">Voor wie meer zoekt</p>
-                            <p>Geen haast, geen ruis. Alleen luxe, spanning en duidelijke leiding.</p>
+                <aside class="home-hero-note" aria-label="Korte introductie">
+                    <p class="eyebrow">Voor wie meer zoekt</p>
+                    <p>Of je nu nieuwsgierig binnenkomt of al precies weet waar je naar verlangt: hier draait alles om volwassen spanning, klasse en heldere kaders.</p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="home-manifesto">
+            <div class="container home-manifesto-grid">
+                <div class="home-manifesto-copy">
+                    <p class="eyebrow">Tussen luxe en leiding</p>
+                    <h2>Een sfeer die rustig voelt, maar nooit vrijblijvend is.</h2>
+                    <p>Ik bouw geen drukke etalage. Ik bouw een wereld waarin iedere stap bewust aanvoelt: van eerste indruk tot custom aanvraag of real life booking.</p>
+                    <p>Voor bezoekers die vallen op stijl, volwassen spanning en een energie die niet hoeft te schreeuwen om sterk te zijn.</p>
+                </div>
+                <div class="home-quote-card">
+                    <p class="home-quote">Luxe aandacht. Duidelijke energie. Een ervaring die onder je huid kruipt zonder ooit gehaast te voelen.</p>
+                    <p class="home-quote-support">Online aandacht, real life presence en tastbare details met dezelfde signatuur.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-focus">
+            <div class="container home-focus-grid">
+                <div class="home-focus-media">
+                    <img src="images/isla-gallery-03.jpeg" alt="Isla Vayne in een editorial fotoset">
+                    <div class="home-focus-overlay">
+                        <p class="eyebrow">High class presence</p>
+                        <p>Geen ruis, wel richting. Alles draait om hoe het voelt wanneer je binnenkomt.</p>
+                    </div>
+                </div>
+                <div class="home-service-panel">
+                    <p class="eyebrow">De wereld van mijn diensten</p>
+                    <h2>Direct, helder en met focus.</h2>
+                    <a class="home-service-row" href="diensten.html">
+                        <span class="home-service-number">01</span>
+                        <div>
+                            <h3>Online aandacht</h3>
+                            <p>Chats, custom content en sessies die draaien om aandacht met richting.</p>
                         </div>
-                    </div>
+                    </a>
+                    <a class="home-service-row" href="wishlist.html">
+                        <span class="home-service-number">02</span>
+                        <div>
+                            <h3>Wishlist &amp; tribute</h3>
+                            <p>Een aparte route voor support, gifts en digitale aandacht die bij mijn sfeer past.</p>
+                        </div>
+                    </a>
+                    <a class="home-service-row" href="merchandise.html">
+                        <span class="home-service-number">03</span>
+                        <div>
+                            <h3>Boeken &amp; tastbare details</h3>
+                            <p>Fysieke items en luxe cadeaus als verlengde van mijn wereld buiten het scherm.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section class="section">
-            <div class="container intro-grid">
-                <div class="section-card">
-                    <p class="eyebrow">De sfeer</p>
-                    <h2>Voor bezoekers die vallen voor luxe met richting.</h2>
-                    <p>Jij komt hier niet voor iets vluchtigs. Je komt hier voor stijl, duidelijke grenzen en een energie die weet wat ze doet.</p>
-                    <p>Of je nu kiest voor online aandacht, custom content of een real life booking: je stapt binnen in een wereld waar controle, klasse en spanning vanzelfsprekend samenkomen.</p>
-                </div>
-                <div class="section-card signature-card">
-                    <p class="eyebrow">Signature</p>
-                    <ul class="signature-list">
-                        <li>Dominante elegantie zonder ruis</li>
-                        <li>Duidelijke kaders en volwassen spanning</li>
-                        <li>Aandacht die voelt als leiding</li>
-                        <li>Luxe details en exclusieve uitstraling</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section-tight">
+        <section class="home-links">
             <div class="container">
-                <div class="link-grid">
-                    <a class="page-card page-card-bio" href="over.html">
+                <div class="home-links-head">
+                    <p class="eyebrow">Gecureerde routes</p>
+                    <h2>Kies hoe je mijn wereld binnenstapt.</h2>
+                </div>
+                <div class="home-links-grid">
+                    <a class="home-editorial-card" href="over.html">
                         <p class="eyebrow">Bio</p>
-                        <h3>Bio</h3>
-                        <p>Lees meer over mijn stijl, energie en de wereld die ik om mij heen bouw.</p>
-                        <span class="page-card-link">Open bio</span>
+                        <h3>Over Isla</h3>
+                        <p>Meer over mijn stijl, energie en de manier waarop ik spanning opbouw.</p>
+                        <span class="home-editorial-link">Lees mijn bio</span>
                     </a>
-                    <a class="page-card" href="diensten.html">
+                    <a class="home-editorial-card" href="diensten.html">
                         <p class="eyebrow">Diensten</p>
-                        <h3>Online en real life</h3>
-                        <p>Bekijk trainingen, custom videos, videobellen en real life boekingen.</p>
-                        <span class="page-card-link">Bekijk diensten</span>
+                        <h3>Online &amp; real life</h3>
+                        <p>Van digitale aandacht tot boekingen met duidelijke kaders en volwassen focus.</p>
+                        <span class="home-editorial-link">Bekijk diensten</span>
                     </a>
-                    <a class="page-card" href="wishlist.html">
-                        <p class="eyebrow">Wishlist</p>
-                        <h3>Wishlist &amp; tribute</h3>
-                        <p>Een aparte plek voor digitale support, tribute en items die passen bij mijn sfeer.</p>
-                        <span class="page-card-link">Open wishlist</span>
-                    </a>
-                    <a class="page-card" href="merchandise.html">
-                        <p class="eyebrow">Shop</p>
-                        <h3>Boeken &amp; gifts</h3>
-                        <p>Koop fysieke boeken, luxe cadeaus en tastbare details die passen bij mijn wereld.</p>
-                        <span class="page-card-link">Open shop</span>
-                    </a>
-                    <a class="page-card" href="galerij.html">
+                    <a class="home-editorial-card" href="galerij.html">
                         <p class="eyebrow">Galerij</p>
-                        <h3>Nieuwe fotoselectie</h3>
-                        <p>Bekijk de nieuwste beelden en krijg direct een sterkere indruk van mijn stijl.</p>
-                        <span class="page-card-link">Open galerij</span>
+                        <h3>Nieuwe selectie</h3>
+                        <p>Beelden die de sfeer sneller laten landen dan een lange uitleg ooit kan doen.</p>
+                        <span class="home-editorial-link">Open galerij</span>
                     </a>
-                    <a class="page-card" href="contact.html">
+                    <a class="home-editorial-card" href="contact.html">
                         <p class="eyebrow">Contact</p>
                         <h3>Vraag direct aan</h3>
-                        <p>Neem contact op voor boekingen, online aanvragen en algemene vragen.</p>
-                        <span class="page-card-link">Ga naar contact</span>
+                        <p>Voor boekingen, online aanvragen en volwassen vragen die een concreet antwoord verdienen.</p>
+                        <span class="home-editorial-link">Neem contact op</span>
                     </a>
                 </div>
             </div>
         </section>
 
-        <section class="section">
-            <div class="container feature-split">
-                <div class="image-stack">
-                    <div class="stack-card large">
-                        <img src="images/isla-gallery-03.jpeg" alt="Isla Vayne in een stijlvolle fotoset">
-                    </div>
-                    <div class="stack-card accent">
-                        <img src="images/isla-gallery-04.jpeg" alt="Detailfoto van Isla Vayne">
+        <section class="home-closing">
+            <div class="container home-closing-grid">
+                <div class="home-closing-copy">
+                    <p class="eyebrow">Ervaringen die blijven hangen</p>
+                    <h2>Van eerste indruk tot concrete aanvraag.</h2>
+                    <p>Als de sfeer klopt, hoeven de volgende stappen niet ingewikkeld te zijn. De bio geeft context, de diensten geven richting en contact brengt het samen.</p>
+                    <p>Alles blijft gecureerd, helder en rustig genoeg om sterk te voelen.</p>
+                    <div class="hero-actions">
+                        <a href="contact.html" class="btn btn-home-solid">Ga naar contact</a>
+                        <a href="galerij.html" class="btn btn-ghost">Bekijk galerij</a>
                     </div>
                 </div>
-                <div class="section-card">
-                    <p class="eyebrow">Opbouw</p>
-                    <h2>Losse pagina's met focus.</h2>
-                    <p>De site is nu opgebouwd rond zes heldere onderdelen: bio, diensten, shop, galerij, tribute wishlist en contact. Daardoor voelt alles rustiger, exclusiever en duidelijker voor bezoekers.</p>
-                    <p>Wil iemand direct door naar prijzen of contact? Dan staan die routes nu veel sneller vooraan.</p>
-                    <div class="hero-actions">
-                        <a href="galerij.html" class="btn btn-secondary">Bekijk galerij</a>
-                        <a href="contact.html" class="btn btn-ghost">Plan contact</a>
+                <div class="home-closing-card">
+                    <img src="images/isla-gallery-04.jpeg" alt="Detailbeeld uit de galerij van Isla Vayne">
+                    <div class="home-closing-note">
+                        <p class="eyebrow">Signature</p>
+                        <ul class="bullet-list">
+                            <li>Duidelijke kaders</li>
+                            <li>Editorial luxe</li>
+                            <li>Volwassen spanning</li>
+                            <li>Aandacht met richting</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -164,7 +183,7 @@
         <div class="container footer-grid">
             <div>
                 <p class="eyebrow">Isla Vayne</p>
-                <p class="footer-text">Een luxe, volwassen setting voor bio, diensten, shop, galerij, tribute en contact.</p>
+                <p class="footer-text">Een gecureerde, volwassen setting voor bio, diensten, shop, galerij, tribute en contact.</p>
             </div>
             <div class="footer-links">
                 <a href="over.html">Bio</a>
