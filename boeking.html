@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boeking | Isla Vayne</title>
-    <meta name="description" content="Lees hoe je een boeking aanvraagt bij Isla Vayne en welke informatie helpt voor een heldere eerste afstemming.">
+    <meta name="description" content="Plan een afspraak met Isla Vayne en kies direct welk type sessie je wilt aanvragen.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Simonetta:wght@400;900&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
                     <li><a href="over.html">Bio</a></li>
                     <li><a href="diensten.html">Diensten</a></li>
                     <li><a href="wishlist.html">Wishlist</a></li>
-                    <li><a href="merchandise.html">Shop</a></li>
+                    <li><a href="boeking.html" class="active">Boeking</a></li>
                     <li><a href="galerij.html">Galerij</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -44,20 +44,20 @@
         <section class="page-hero">
             <div class="container hero-grid">
                 <div class="hero-copy">
-                    <p class="eyebrow">Boeking | Duidelijk en zonder omweg</p>
-                    <h1>Vraag een real life boeking aan met genoeg context om direct goed te landen.</h1>
-                    <p>Hoe concreter de eerste aanvraag, hoe sneller ik kan inschatten of de energie, timing en praktische details bij elkaar passen.</p>
+                    <p class="eyebrow">Boeking | Maak direct een afspraak</p>
+                    <h1>Kies je sessie en stuur je afspraakverzoek meteen door.</h1>
+                    <p>Deze pagina is bedoeld voor klanten die een sessie willen boeken. Kies eerst wat voor sessie je zoekt en geef daarna je voorkeursdatum, tijd en extra wensen door.</p>
                     <div class="hero-actions">
-                        <a href="contact.html#contact-form" class="btn btn-primary">Start je aanvraag</a>
-                        <a href="diensten.html" class="btn btn-ghost">Bekijk eerst de diensten</a>
+                        <a href="#booking-form" class="btn btn-primary">Maak een afspraak</a>
+                        <a href="diensten.html" class="btn btn-ghost">Bekijk alle diensten</a>
                     </div>
                 </div>
                 <div class="hero-visual">
                     <div class="portrait-card portrait-card-home">
                         <img src="images/isla-gallery-21.jpeg" alt="Sfeerbeeld voor boekingen van Isla Vayne">
                         <div class="hero-portrait-note">
-                            <p class="eyebrow">Beste start</p>
-                            <p>Datum, duur, voorkeur en je intentie direct benoemen maakt het verschil.</p>
+                            <p class="eyebrow">Direct en duidelijk</p>
+                            <p>Kies je sessie, noem je beschikbaarheid en laat meteen weten wat je zoekt.</p>
                         </div>
                     </div>
                 </div>
@@ -68,58 +68,111 @@
             <div class="container contact-layout">
                 <div class="contact-panel">
                     <div class="section-card">
-                        <p class="eyebrow">Wat helpt in je bericht</p>
-                        <h2>Helderheid maakt de eerste stap sterker.</h2>
+                        <p class="eyebrow">Hoe het werkt</p>
+                        <h2>Een afspraak aanvragen in drie heldere stappen.</h2>
                         <div class="contact-steps">
                             <article class="step-card">
-                                <h3>Datum</h3>
-                                <p>Noem je gewenste periode of meerdere opties zodat er sneller geschakeld kan worden.</p>
+                                <h3>Kies je sessie</h3>
+                                <p>Selecteer eerst het type afspraak en daarna welke sessie je precies wilt aanvragen.</p>
                             </article>
                             <article class="step-card">
-                                <h3>Duur</h3>
-                                <p>Geef aan of je denkt aan een uur, twee uur of een andere vorm van opbouw.</p>
+                                <h3>Vul je voorkeuren in</h3>
+                                <p>Noem je datum, tijd, duur en eventuele extra wensen zodat de aanvraag direct duidelijk is.</p>
                             </article>
                             <article class="step-card">
-                                <h3>Voorkeur</h3>
-                                <p>Vertel welke sfeer, dynamiek of focus je zoekt, zonder meteen alles dicht te timmeren.</p>
+                                <h3>Verstuur je boeking</h3>
+                                <p>Na verzenden komt je aanvraag direct per mail binnen en kom je op een eigen bevestigingspagina.</p>
                             </article>
                         </div>
+                        <p class="micro-copy">Een boeking is een aanvraag en pas definitief na bevestiging. Beschikbaarheid en match blijven altijd leidend.</p>
                     </div>
                 </div>
-                <div class="contact-panel">
-                    <div class="section-card signature-card">
-                        <p class="eyebrow">Belangrijk</p>
-                        <ul class="signature-list">
-                            <li>Alleen voor volwassenen van 18 jaar of ouder</li>
-                            <li>Altijd op basis van overleg en wederzijdse afstemming</li>
-                            <li>Respect, discretie en duidelijke communicatie zijn vanzelfsprekend</li>
-                            <li>Niet iedere aanvraag hoeft een match te zijn om correct behandeld te worden</li>
-                        </ul>
-                    </div>
+
+                <div class="contact-form-card">
+                    <form id="booking-form" class="contact-form" method="post" action="https://formsubmit.co/casbeumer@gmail.com">
+                        <input type="hidden" name="_subject" value="Nieuwe boeking via Isla Vayne">
+                        <input type="hidden" name="_next" value="https://cassie12345678.github.io/isla/bedankt-boeking.html">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_url" value="https://cassie12345678.github.io/isla/boeking.html">
+                        <input type="hidden" name="_autoresponse" value="Je boekingaanvraag is ontvangen. Zodra deze is bekeken, volgt de volgende stap.">
+                        <input type="text" name="_honey" class="honeypot-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                        <label for="naam">Naam</label>
+                        <input type="text" id="naam" name="naam" autocomplete="name" required>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+
+                        <label for="telefoon">Telefoon / WhatsApp</label>
+                        <input type="tel" id="telefoon" name="telefoon" autocomplete="tel" placeholder="Optioneel, maar handig voor snelle afstemming">
+
+                        <label for="afspraaktype">Type afspraak</label>
+                        <select id="afspraaktype" name="afspraaktype" required>
+                            <option value="">Maak een keuze</option>
+                            <option value="real-life">Real life sessie</option>
+                            <option value="online">Online sessie</option>
+                            <option value="training">Training</option>
+                            <option value="custom">Custom content</option>
+                            <option value="overleg">Eerst overleggen</option>
+                        </select>
+
+                        <label for="sessie">Welke sessie wil je boeken</label>
+                        <select id="sessie" name="sessie" required>
+                            <option value="">Kies je sessie</option>
+                            <optgroup label="Real life">
+                                <option value="real-life-1-uur">Real life sessie 1 uur</option>
+                                <option value="real-life-2-uur">Real life sessie 2 uur</option>
+                                <option value="real-life-op-maat">Real life sessie op maat</option>
+                            </optgroup>
+                            <optgroup label="Videobellen">
+                                <option value="videobellen-10">Videobellen 10 minuten</option>
+                                <option value="videobellen-20">Videobellen 20 minuten</option>
+                                <option value="videobellen-30">Videobellen 30 minuten</option>
+                                <option value="videobellen-60">Videobellen 60 minuten</option>
+                            </optgroup>
+                            <optgroup label="Training">
+                                <option value="weektraining-brons">Weektraining Brons</option>
+                                <option value="weektraining-zilver">Weektraining Zilver</option>
+                                <option value="weektraining-goud">Weektraining Goud</option>
+                                <option value="maandtraining-brons">Maandtraining Brons</option>
+                                <option value="maandtraining-zilver">Maandtraining Zilver</option>
+                                <option value="maandtraining-goud">Maandtraining Goud</option>
+                            </optgroup>
+                            <optgroup label="Custom">
+                                <option value="custom-joi-5">Custom JoI video 5 minuten</option>
+                                <option value="custom-joi-10">Custom JoI video 10 minuten</option>
+                                <option value="custom-joi-15">Custom JoI video 15 minuten</option>
+                                <option value="custom-strapon-5">Custom strap on video 5 minuten</option>
+                                <option value="custom-strapon-10">Custom strap on video 10 minuten</option>
+                            </optgroup>
+                        </select>
+
+                        <label for="datum">Voorkeursdatum</label>
+                        <input type="date" id="datum" name="datum" required>
+
+                        <label for="tijd">Voorkeurstijd</label>
+                        <input type="time" id="tijd" name="tijd">
+                        <p class="field-help">Heb je meerdere opties? Zet die gerust in je bericht erbij.</p>
+
+                        <label for="voorkeur">Plaats / extra voorkeur</label>
+                        <input type="text" id="voorkeur" name="voorkeur" placeholder="Bijvoorbeeld: avond, Rotterdam, discreet, 2 uur">
+
+                        <label for="bericht">Bericht</label>
+                        <textarea id="bericht" name="bericht" rows="7" placeholder="Vertel kort wat je zoekt, welke sfeer je wilt en alles wat helpt voor de aanvraag." required></textarea>
+
+                        <button type="submit" class="btn btn-primary">Verstuur boeking</button>
+                        <p class="micro-copy">De eerste keer vraagt FormSubmit om een activatiebevestiging op <strong>casbeumer@gmail.com</strong>. Daarna werkt dit formulier live op GitHub Pages.</p>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-grid">
-            <div>
-                <p class="eyebrow">Isla Vayne</p>
-                <p class="footer-text">Een gecureerde, volwassen setting voor bio, diensten, shop, galerij, tribute en contact.</p>
-            </div>
-            <div class="footer-links">
-                <a href="over.html">Bio</a>
-                <a href="diensten.html">Diensten</a>
-                <a href="merchandise.html">Shop</a>
-                <a href="galerij.html">Galerij</a>
-                <a href="wishlist.html">Wishlist</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="footer-note">
-                <p>18+ only</p>
-                <p>Alle aanvragen uitsluitend voor volwassenen.</p>
-            </div>
+        <div class="container footer-simple">
+            <p>isla vayne domintrix @2026</p>
         </div>
     </footer>
 </body>
 </html>
+
