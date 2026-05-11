@@ -304,7 +304,12 @@ body.theme-light .site-header {
 }
 
 .hero-copy-home h1 {
-    max-width: 11ch;
+    max-width: 12ch;
+    font-family: var(--font-body);
+    font-size: clamp(2.25rem, 4.8vw, 4.2rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.04em;
 }
 
 .hero-actions {
@@ -582,6 +587,37 @@ body.theme-light .site-header {
 .section-card h2 {
     font-size: clamp(2rem, 4vw, 3rem);
     margin-bottom: 1rem;
+}
+
+/* Give the bio panels a tailored gold frame without changing shared cards site-wide. */
+.page-bio .section-card {
+    border-color: rgba(215, 171, 98, 0.34);
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015)),
+        linear-gradient(135deg, rgba(215, 171, 98, 0.08), rgba(215, 171, 98, 0.015) 28%, rgba(176, 29, 77, 0.16)),
+        var(--surface);
+    box-shadow:
+        0 26px 62px rgba(10, 2, 7, 0.34),
+        inset 0 0 0 1px rgba(255, 248, 235, 0.05);
+}
+
+.page-bio .section-card::before {
+    left: 1.6rem;
+    width: 108px;
+    background: linear-gradient(90deg, rgba(215, 171, 98, 0.96), rgba(215, 171, 98, 0.22), rgba(215, 171, 98, 0));
+}
+
+.page-bio .section-card::after {
+    top: 0.85rem;
+    right: 0.85rem;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(215, 171, 98, 0.16), transparent 70%);
+}
+
+.page-bio .section-card h2 {
+    font-size: clamp(1.7rem, 3.2vw, 2.45rem);
+    margin-bottom: 0.85rem;
 }
 
 .section-card p,
@@ -1065,13 +1101,28 @@ body.theme-light .site-footer {
 }
 
 .age-modal-content {
+    position: relative;
+    overflow: hidden;
     width: min(420px, 100%);
     padding: 2rem;
     border-radius: var(--radius);
-    background: var(--surface-strong);
-    border: 1px solid var(--border);
-    box-shadow: var(--shadow);
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015)),
+        var(--surface-strong);
+    border: 1px solid rgba(215, 171, 98, 0.38);
+    box-shadow:
+        0 28px 64px rgba(0, 0, 0, 0.38),
+        inset 0 0 0 1px rgba(255, 248, 235, 0.05);
     text-align: center;
+}
+
+.age-modal-content::before {
+    content: "";
+    position: absolute;
+    inset: 0.8rem;
+    border: 1px solid rgba(215, 171, 98, 0.16);
+    border-radius: calc(var(--radius) - 12px);
+    pointer-events: none;
 }
 
 .age-modal-content h2 {
@@ -1217,9 +1268,17 @@ body.theme-light .site-footer {
         font-size: 2.45rem;
     }
 
+    .hero-copy-home h1 {
+        font-size: 2.05rem;
+    }
+
     .section-card h2,
     .group-head h2 {
         font-size: 1.9rem;
+    }
+
+    .page-bio .section-card h2 {
+        font-size: 1.65rem;
     }
 
     .portrait-card img,
