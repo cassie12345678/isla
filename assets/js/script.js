@@ -40,17 +40,17 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     };
 
-    try {
-        if (localStorage.getItem("site-theme") === "light") {
-            body.classList.add("theme-light");
-        }
-    } catch (error) {
-        // Ignore storage issues and keep the default theme.
-    }
-
-    updateThemeToggle();
-
     if (themeToggle) {
+        try {
+            if (localStorage.getItem("site-theme") === "light") {
+                body.classList.add("theme-light");
+            }
+        } catch (error) {
+            // Ignore storage issues and keep the default theme.
+        }
+
+        updateThemeToggle();
+
         themeToggle.addEventListener("click", () => {
             body.classList.toggle("theme-light");
 
